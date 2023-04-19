@@ -3,27 +3,6 @@ import styles from '@/styles/Home.module.css'
 import MeetupList from '@/components/meetups/MeetupList'
 import { MongoClient } from 'mongodb';
 
-const MEETUPS = [
-  {
-    id: 'm1',
-    image: 'https://www.tripsavvy.com/thmb/gdhvU4tBn_De9xOSyYnh1dHAUEw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/beach-5b59c9b7c9e77c004b3e0ff0.jpg',
-    title: 'A Beach',
-    address: 'beach 1, Maldives',
-  },
-  {
-    id: 'm2',
-    image: 'https://www.tripsavvy.com/thmb/gdhvU4tBn_De9xOSyYnh1dHAUEw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/beach-5b59c9b7c9e77c004b3e0ff0.jpg',
-    title: 'A similar Beach',
-    address: 'beach 145, Diu',
-  },
-  {
-    id: 'm3',
-    image: 'https://www.tripsavvy.com/thmb/gdhvU4tBn_De9xOSyYnh1dHAUEw=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/beach-5b59c9b7c9e77c004b3e0ff0.jpg',
-    title: 'A different same Beach',
-    address: 'beach 123, Goa',
-  },
-];
-
 export default function Home(props) {
 
 

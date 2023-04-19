@@ -31,7 +31,7 @@ export async function getStaticPaths() {
     client.close();
 
     return {
-        fallback: false,  //false means that every page are included and if any other page is requested no page found will be shown
+        fallback: 'blocking',  //false means that every page are included and if any other page is requested no page found will be shown
         paths: meetups.map(meetup => ({
             params: { meetId: meetup._id.toString() },
         }))
